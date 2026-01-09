@@ -28,16 +28,16 @@ Final Output (Result): Kết quả thống kê cuối cùng được xuất ra f
 ```plaintext
 .
 ├── app/
-│   ├── main.py                # Ingestion: S3 -> MinIO (MinIO Client)
-│   ├── convert_to_parquet.py  # ETL: TSV.ZIP -> Parquet 
-│   └── process_data.py        # Analytics: Polars Streaming
+│   ├── main.py                       # Ingestion: S3 -> MinIO (MinIO Client)
+│   ├── convert_to_parquet.py         # ETL: TSV.ZIP -> Parquet 
+│   └── process_data.py               # Analytics: Polars Streaming
 ├── test/
-│   ├── test_main.py           # Audit: Magic Bytes / Zip check
-│   ├── test_convert.py        # Audit: Row count reconciliation
-│   └── test_process.py        # Audit: Final data verification
-├── config.py                  # Centralized configuration
-├── docker-compose.yml         # Infrastructure (MinIO + Worker)
-└── RUN_ALL.bat                # One-click Orchestrator for Windows
+│   ├── test_main.py                  # Audit: Magic Bytes / Zip check
+│   ├── test_convert_to_parquet.py    # Audit: Row count reconciliation
+│   └── test_process_data.py          # Audit: Final data verification
+├── config.py                         # Centralized configuration
+├── docker-compose.yml                # Infrastructure (MinIO + Worker)
+└── RUN_ALL.bat                       # One-click Orchestrator for Windows
 ```
 🛠️ Getting Started
 
@@ -70,7 +70,7 @@ Consistency Check: Đối soát số dòng giữa file TSV gốc và file Parque
 Reconciliation: So sánh kết quả phân tích cuối cùng với dữ liệu thô bằng phương pháp Brute-force để đảm bảo logic chính xác.
 
 📈 Future Roadmap (Scale-up Plan)
-Dự án hiện tại là phiên bản Proof of Concept (PoC). Nếu nhu cầu dữ liệu tăng lên quy mô Petabyte hoặc có yêu cầu thực tế với lượng data lớn cần lưu và xử lý phân tán:
+Dự án hiện tại là phiên bản Proof of Concept (PoC). Nếu nhu cầu quy mô dữ liệu tăng lên hoặc có yêu cầu thực tế với lượng data lớn cần lưu và xử lý phân tán:
 
 Orchestration: Thay thế .bat script bằng Apache Airflow để lập lịch, quản lý phụ thuộc (DAG) và cơ chế Retry tự động.
 
