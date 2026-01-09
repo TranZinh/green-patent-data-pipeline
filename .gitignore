@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+
+# Data & outputs
+minio_data/
+*.csv
+*.parquet
+
+# Virtual env
+venv/
+.env
+
+# OS
+Thumbs.db
+.DS_Store
