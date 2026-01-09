@@ -16,6 +16,7 @@ Note from Developer: Đây là dự án cá nhân được phát triển trong 1
 ⚙️ Config-Driven: Quản lý toàn bộ tham số qua config.py, dễ dàng chuyển đổi môi trường.
 
 🏗️ Data Workflow & Structure
+
 Dự án tổ chức luồng dữ liệu theo 3 bước xử lý cơ bản để quản lý tệp tin gọn gàng và tối ưu bộ nhớ:
 
 Raw Storage (Input): Lưu trữ các file .tsv.zip gốc tải từ USPTO S3. Đây là dữ liệu thô, được giữ nguyên vẹn để phục vụ đối soát.
