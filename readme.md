@@ -4,6 +4,7 @@ Hệ thống xử lý và phân tích dữ liệu bằng sáng chế quy mô l�
 Note from Developer: Đây là dự án cá nhân được phát triển trong 1 ngày. Do giới hạn về thời gian và "sự lười biếng" của developer (ưu tiên giải pháp đơn giản mà hiệu quả), hệ thống hiện tại tập trung vào tính thực dụng, giải quyết bài toán dữ liệu lớn trên phần cứng yếu trước khi nghĩ đến các công cụ chuyên nghiệp hơn như airflow, spark,... .
 
 🚀 Key Highlights
+
 📦 Resource Efficiency: Xử lý 57 triệu dòng dữ liệu trên máy 8GB RAM nhờ Polars Streaming.
 
 🌱 Green Insight: Lọc và phân tích Green Patents theo chuẩn CPC Y02 (OECD / EPO).
