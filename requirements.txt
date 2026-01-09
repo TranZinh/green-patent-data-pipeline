@@ -1,0 +1,20 @@
+# Kết nối và quản lý MinIO storage
+minio
+
+# Xử lý và phân tích dữ liệu hiệu năng cao
+polars
+
+# Thao tác với hệ thống file S3 (dùng cho convert_to_parquet)
+s3fs
+
+# Đọc/ghi định dạng file Parquet và xử lý schema
+pyarrow
+
+# Thư viện bổ trợ cho việc đọc CSV và xử lý chunk
+pandas
+
+# Thư viện để tải dữ liệu từ internet (dùng trong main.py)
+requests
+
+# Bổ trợ tính toán toán học (nếu cần dùng thêm trong logic)
+numpy

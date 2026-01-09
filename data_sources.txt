@@ -1,0 +1,5 @@
+#put all your dowload link here
+https://s3.amazonaws.com/data.patentsview.org/download/g_patent.tsv.zip
+https://s3.amazonaws.com/data.patentsview.org/download/g_application.tsv.zip
+https://s3.amazonaws.com/data.patentsview.org/download/g_cpc_current.tsv.zip
+https://s3.amazonaws.com/data.patentsview.org/download/g_assignee_disambiguated.tsv.zip
