@@ -51,13 +51,15 @@ Docker & Docker Compose.
 2️⃣ One-Click Execution
 Thay vì gõ từng lệnh thủ công, sử dụng script điều phối đã được thiết lập sẵn:
 
-Bash
+```Bash
 
 # Khởi động hạ tầng (chạy lần đầu)
 docker-compose up -d --build
 
 # Chạy toàn bộ Pipeline (Ingest -> Test -> Transform -> Test -> Analyze -> Test)
 RUN_ALL.bat
+```
+
 🛡️ Quality Assurance (QA) & Audit
 Dự án nhấn mạnh vào việc kiểm soát lỗi dữ liệu thông qua 3 lớp phòng thủ:
 
