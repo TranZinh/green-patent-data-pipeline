@@ -23,21 +23,22 @@ Middle Storage (Temporary Parquet): Dữ liệu được giải nén và chuyể
 
 Final Output (Result): Kết quả thống kê cuối cùng được xuất ra file CSV, sẵn sàng để sử dụng ngay trên Excel hoặc các công cụ báo cáo.
 
-📂 Project Structure
-Plaintext
+## 📂 Project Structure
 
+```plaintext
 .
 ├── app/
 │   ├── main.py                # Ingestion: S3 -> MinIO (MinIO Client)
 │   ├── convert_to_parquet.py  # ETL: TSV.ZIP -> Parquet 
 │   └── process_data.py        # Analytics: Polars Streaming
 ├── test/
-│   ├── test_main.py           # Audit: Magic Bytes/Zip check
+│   ├── test_main.py           # Audit: Magic Bytes / Zip check
 │   ├── test_convert.py        # Audit: Row count reconciliation
 │   └── test_process.py        # Audit: Final data verification
 ├── config.py                  # Centralized configuration
 ├── docker-compose.yml         # Infrastructure (MinIO + Worker)
 └── RUN_ALL.bat                # One-click Orchestrator for Windows
+```
 🛠️ Getting Started
 1️⃣ Requirements
 Docker & Docker Compose.
